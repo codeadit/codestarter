@@ -395,25 +395,25 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 4.0rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-2 {
-  font-size: 5.5rem;
+  font-size: 3.25rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 1.75rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -4379,10 +4379,10 @@ input[type=button].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #002445;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #002445;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
@@ -4397,7 +4397,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #002445;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -4410,10 +4410,10 @@ input[type=button].btn-block {
   color: rgba(255, 255, 255, 0.5);
 }
 .navbar-dark .navbar-text a {
-  color: #fff;
+  color: #002445;
 }
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: #002445;
 }
 
 .card {
@@ -10228,7 +10228,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.3) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.15) 75%, #ffffff 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10236,22 +10236,27 @@ body {
 }
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 4.0rem;
+  line-height: 4.0rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #002445;
   -webkit-background-clip: text;
           background-clip: text;
 }
 .masthead h2 {
   max-width: 20rem;
+  -webkit-text-fill-color: #002445;
   font-size: 1rem;
 }
+.masthead p {
+  -webkit-text-fill-color: #002445;
+}
+
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 4.0rem;
+    line-height: 4.0rem;
   }
 }
 @media (min-width: 992px) {
@@ -10260,8 +10265,8 @@ body {
     padding: 0;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 4.0rem;
+    line-height: 4.0rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
@@ -10273,17 +10278,32 @@ body {
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.01) 75%, rgba(0, 0, 0, 0.2) 100%);
+
 }
 .about-section p {
   margin-bottom: 5rem;
+  color: #002445;
+}
+
+.about-section h2 {
+  color: #002445;
 }
 
 .projects-section {
   padding: 10rem 0;
 }
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 2.5rem;
 }
+
+.projects-section p{
+  color: #002445;
+}
+
+.projects-section h4{
+  color: #002445;
+}
+
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
