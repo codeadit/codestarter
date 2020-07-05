@@ -14,13 +14,27 @@
     $("#shrimad").click(
       function () {
         $("#content-section").show();
-        $("#content-col").load('shrimad.html');
+        $("#content-container").load('shrimad.html');
+      }
+    );
+
+    $("#shrimad-2").click(
+      function () {
+        $("#content-section").show();
+        $("#content-container").load('shrimad.html');
       }
     );
 
     $("#elonmusk").click(
       function () {
-        $("#content-col").load('elonmusk.html');
+        $("#content-container").load('elonmusk.html');
+      }
+    );
+
+    $("#calc").click(
+      function () {
+        $("#content-section").show();
+        $("#content-container").load("calculator/calculator.html");
       }
     );
 
