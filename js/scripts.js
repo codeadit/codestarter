@@ -14,20 +14,20 @@
     $("#shrimad").click(
       function () {
         $("#content-section").show();
-        $("#content-container").load('shrimad.html');
+        $("#content-container").load('biographies/shrimad.html');
       }
     );
 
     $("#shrimad-2").click(
       function () {
         $("#content-section").show();
-        $("#content-container").load('shrimad.html');
+        $("#content-container").load('biographies/shrimad.html');
       }
     );
 
     $("#elonmusk").click(
       function () {
-        $("#content-container").load('elonmusk.html');
+        $("#content-container").load('biographies/elonmusk.html');
       }
     );
 
