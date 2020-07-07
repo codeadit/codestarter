@@ -38,6 +38,20 @@
       }
     );
 
+    $("#pongGame").click(
+      function () {
+        $("#content-section").show();
+        $("#content-container").load("games/pong/pong.html");
+      }
+    );
+
+    $("#spaceRace").click(
+      function () {
+        $("#content-section").show();
+        $("#content-container").load("games/spaceRace/spaceRace.html");
+      }
+    );
+
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
