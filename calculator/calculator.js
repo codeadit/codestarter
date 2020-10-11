@@ -1,4 +1,4 @@
-  
+
   function number() {
     var clickedNumber = $(event.target).text(); //value of the number you clicked
     var currentResult = $("#result").text(); //value of current result
