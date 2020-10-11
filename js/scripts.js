@@ -45,10 +45,10 @@
       }
     );
 
-    $("#spaceRace").click(
+    $("#paddle").click(
       function () {
         $("#content-section").show();
-        $("#content-container").load("games/spaceRace/spaceRace.html");
+        $("#content-container").load("games/paddle/paddle.html");
       }
     );
 
