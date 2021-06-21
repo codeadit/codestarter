@@ -38,8 +38,15 @@
       }
     );
 
+    var paddleInterval;
+    var pongInterval;
+    var gameStartTime;
+
     $("#pongGame").click(
       function () {
+        clearInterval(paddleInterval);
+        clearInterval(pongInterval);
+        $("#content-container").empty();
         $("#content-section").show();
         $("#content-container").load("games/pong/pong.html");
       }
@@ -47,6 +54,9 @@
 
     $("#paddle").click(
       function () {
+        clearInterval(paddleInterval);
+        clearInterval(pongInterval);
+        $("#content-container").empty();
         $("#content-section").show();
         $("#content-container").load("games/paddle/paddle.html");
       }

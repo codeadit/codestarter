@@ -12,12 +12,19 @@ var ballR = 20;
 var drawSpeed = 5;
 var ballSpeed = 1;
 var score = 0;
-//Show score of 0 at the beginning using printText();
-//Increase score by 1, every time the ball hits the paddleX
+
+paddleInterval = window.setInterval(draw, drawSpeed);
+gameStartTime = new Date().getTime();
 
 drawCanvas(canvasWidth, canvasHeight);
 
 function draw() {
+  //Stop the game after a minute
+  if (new Date().getTime() - gameStartTime > 120000){
+        clearInterval(paddleInterval);
+        return;
+    }
+
   clearCanvas();
   printText(score);
   createNewBall();
@@ -102,7 +109,6 @@ if (ballY > canvasHeight - paddleBottomBuffer - ballR) {
 
   move();
 }
-window.setInterval(draw, drawSpeed);
 
 function paddleGoRight() {
   if (paddleX == canvasWidth - paddleWidth) {
